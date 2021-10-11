@@ -43,8 +43,8 @@ const postJob = (body) => {
       location: body.location,
     })
 };
-const getPostedJobs = () => {
-  return axios.get("recruiters/jobs");
+const getPostedJobs = (page) => {
+  return axios.get("recruiters/jobs?page="+page);
 };
 
 const getCandidates = (jobId) => {

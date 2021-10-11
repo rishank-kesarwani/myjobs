@@ -6,7 +6,6 @@ import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Jobs from './pages/Jobs';
 import PostJobs from './pages/PostJobs';
-import Applicant from './pages/Applicant';
 import { Logout } from './pages/Logout';
 import {Header} from './components/Header';
 import {
@@ -28,7 +27,6 @@ function App() {
               <Route exact path="/jobs" component={Jobs}/>
               <Route exact path="/reset-password/:resetToken" component={ResetPassword}/>
               <Route exact path="/post-job" component={PostJobs}/>
-              <Route exact path="/applicants" component={Applicant}/>
               <Route exact path="/logout" component={Logout}/>
           </Switch>
       </div>

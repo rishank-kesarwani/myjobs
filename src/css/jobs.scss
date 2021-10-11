@@ -2,7 +2,6 @@
     .formContainer {
         width: 100%;
         background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
-        position: relative;
         height: 12rem;
         .jobsHeading {
             width: 75%;
@@ -20,11 +19,12 @@
     .jobContainer {
         background: #EDF6FF;
         height: 210vh;
+        position: relative;
         .allJobContainer {
             width: 80%;
             display: flex;
             position: absolute;
-            top: 35%;
+            top: -4%;
             left: 12%;
             flex-wrap: wrap;
             word-wrap: break-word;
