@@ -1,0 +1,187 @@
+.mainContainer {
+    .formContainer {
+        width: 100%;
+        background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+        position: relative;
+        height: 12rem;
+        .jobsHeading {
+            width: 75%;
+            margin: 0 auto;
+            h3 {
+                font-size: 22px;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 400;
+                color: #fff;
+                padding-top: 5rem;
+                margin: -1px;
+            }
+        }
+    }
+    .jobContainer {
+        background: #EDF6FF;
+        height: 210vh;
+        .allJobContainer {
+            width: 80%;
+            display: flex;
+            position: absolute;
+            top: 35%;
+            left: 12%;
+            flex-wrap: wrap;
+            word-wrap: break-word;
+            .allJobs {
+                background: #fff;
+                display: flex;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+                width: 27.5%;
+                flex-direction: column;
+                justify-content: left;
+                padding: 1rem;
+                border-radius: 10px;
+                h4 {
+                    letter-spacing: 0px;
+                    color: #303F60;
+                    font-size: 17px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    margin: 0.5rem 0;
+                }
+                p {
+                    letter-spacing: 0px;
+                    color: #303F60;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    opacity: 0.8;
+                }
+                .application {
+                    display: flex;
+                    justify-content: space-between;
+                    .location {
+                        color: #43afff;
+                        display: flex;
+                        span {
+                            color: #303f60;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                    .viewApplication {
+                        width: 125px;
+                        height: 32px;
+                        border: 1px solid #43afff;
+                        background: #43AFFF33 0% 0% no-repeat padding-box;
+                        border: 1px solid #43AFFF;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        color: #303f60;
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 200;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .noJobs {
+            width: 25%;
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                width: 106px;
+                height: 106px;
+                margin: 50% auto 1.5rem;
+            }
+            h4 {
+                letter-spacing: 0px;
+                color: #303F60;
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+                margin: 0 auto 2rem;
+            }
+            a {
+                text-decoration: none;
+                .jobButton {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        margin-top: 0px;
+                        width: 148px;
+                        height: 46px;
+                        background: #43afff 0% 0% no-repeat padding-box;
+                        border: 1px solid #43afff;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        text-align: center;
+                        letter-spacing: 0px;
+                        color: #fff;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 200;
+                    }
+        
+                }
+    
+            }        
+        }
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    .mainContainer {
+        .formContainer {
+            .jobsHeading {
+                width: 80%
+            }
+        }
+        .jobContainer {
+            height: 190vh;
+            .allJobContainer {
+                top: 22%;
+                width: 85%;
+                left: 10.5%;
+                .allJobs {
+                    width: 40%;
+                }
+            }
+            .noJobs {
+                width: 75%;
+            }
+        }
+    }
+}
+@media(max-width: 767px)
+{
+    .mainContainer {
+        .formContainer {
+            .jobsHeading {
+                width: 90%;
+            }
+        }
+        .jobContainer {
+            height: 640vh;
+            .allJobContainer {
+                top: 36%;
+                left: 5%;
+                width: 100%;
+                flex-direction: column;
+                .allJobs {
+                    width: 80%;
+                    margin-right: 0rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .noJobs {
+                width: 100%;
+                img {
+                    margin-top: 40%;
+                }
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

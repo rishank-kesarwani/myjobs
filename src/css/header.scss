@@ -1,0 +1,93 @@
+.headerContainer{
+    width: 100%;
+    background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+    height: 6rem;
+    .main_header {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        h4 {
+            font-size: 22px;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            span {
+                color: #43afff;
+            }
+        }
+        .login {
+            width: 148px;
+            height: 46px;
+            background: #43AFFF33 0% 0% no-repeat padding-box;
+            border: 1px solid #43AFFF;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+            margin-top: 18px;
+        }
+        .activeUser {
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            a {
+                text-decoration: none;
+                position: absolute;
+                top: 15px;
+                left: -200px;
+                .post {
+                    font-size: 1rem;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 0.8;
+                    padding-right: 2rem;
+                }
+            }
+            .user {
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                left: -73px;
+                top: 5px;
+                .userName {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: #D9EFFF;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        left: 18px;
+                        top: 9px;
+                        letter-spacing: 0px;
+                        color: #303F60;
+                        opacity: 0.8;
+                        font-size: 18px;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                    }
+                }
+                .toolTip {
+                    color: #fff;
+                    opacity: 0.8;
+                    position: absolute;
+                    left: 50px;
+                    top: 28px;
+                    font-weight: 300;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+    .seperator {
+        width: 90%;
+        border: 1px solid #4D618E;
+        margin: -10px auto 0;
+    }
+}

@@ -1,0 +1,186 @@
+.parentContainer {
+    .formContainer {
+        width: 100%;
+        height: 17rem;
+        position: relative;
+        background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+    }
+    .uiContainer{
+        background: #EDF6FF;
+        height: 100vh;
+        form {
+            width: 40%;
+            margin: 0 auto;
+            padding: 1.5rem 1.5rem 0;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 30px 36px #557DA526;
+            border-radius: 20px;
+            position: absolute;
+            left: 29%;
+            top: 25%;
+            .icon_label {
+                margin-bottom: 1rem;
+            }
+            .userType {
+                display: flex;
+                margin-bottom: 1.5rem;
+                .icons {
+                    margin-top: 0;
+                    display: inline-block;
+                    margin-right: 1rem;
+                    color: #43afff;
+                    border: 1px solid #303f60;
+                    background: none;
+                    font-size: 19px;
+                    span {
+                        color: #303f60;
+                        font-size: 15px;
+                    }
+                    .active {
+                        background: #43afff 0% 0% no-repeat padding-box;
+                        border: 1px solid #43afff;
+                        color: #fff;
+                    }
+                }
+            }
+            .forgotInstruction {
+                margin-bottom: 1.5rem;
+            }
+            .forgotSubmit {
+                margin-bottom: 2rem;
+            }
+            .labelContainer {
+                display: flex;
+                justify-content: space-between;
+                label {
+                    a {
+                        text-decoration: none;
+                        color: #43afff;
+                    }
+                }
+            }
+            h4 {
+                text-align: left;
+                letter-spacing: 0px;
+                color: #303F60;
+                text-transform: capitalize;
+                font-size: 22px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                margin-bottom: 2.5rem;
+            }
+            .borderRed {
+                border: 1px solid #FF333380;
+            }
+            label {
+                color: #303F60;
+                font-size: 14px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                margin-bottom: 0.1rem;
+            }
+            .validation
+            {
+                float: right;
+                color: red;
+                display: flex;
+                justify-content: end;
+                position: relative;
+                span {
+                    position: absolute;
+                    top: -22px;
+                    font-size: 12px;
+                }
+            }
+            .passWordContainer {
+                display: flex;
+                .create_password, .confirm_password {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                }
+                .create_password {
+                    margin-right: 2rem;
+                }
+            }
+            button {
+                width: 148px;
+                height: 46px;
+                background: #43afff 0% 0% no-repeat padding-box;
+                border: 1px solid #43afff;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0px;
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+                margin-right: 10px;
+            }
+            .buttonContainer
+            {
+                display: flex;
+                justify-content: center;
+                margin-top: 25px;
+            }
+            .textContainer {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                p {
+                    font-size: 16px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 300;
+                    a {
+                        text-decoration: none;
+                        color: #43afff;
+                    }
+                }
+            }
+            input {
+                margin-bottom: 1.5rem;
+                font-size: 14px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+                padding: 0.5rem;
+                border-radius: 5px;
+                border: 1px solid #303f60;
+                &:focus {
+                    border: 1px solid #43afff;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    .parentContainer {
+        height: 65vh;
+        .uiContainer {
+            form {
+                width: 60%;
+                left: 19%;
+            }
+        }
+    }
+}
+@media(max-width: 767px)
+{
+    .parentContainer {
+        height: 50vh;
+        .uiContainer {
+            form {
+                width: 90%;
+                left: 5%;
+                .passWordContainer {
+                    .create_password {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
