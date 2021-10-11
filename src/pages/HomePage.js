@@ -14,6 +14,8 @@ import icon10 from "../assets/Images/icons/icon10.jpg";
 const HomePage = ({history}) => {
   useEffect(() => {
     if(localStorage.getItem("authenticatedUser")) history.push("/jobs");
+    //Below line is only using for hosting purpose in vercel
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
     <div className="homeContainer">

@@ -28,6 +28,8 @@ const ResetPassword = ({history}) => {
         setIsVerified(-1);
       }
     })();
+    //Below line is only using for hosting purpose in vercel
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const formik = useFormik({
