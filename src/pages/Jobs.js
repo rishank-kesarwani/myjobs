@@ -19,9 +19,10 @@ const Jobs = () => {
   const handleClose = () => setOpen(false);
   const style = {
     pagination: {
-      position: "absolute",
-      bottom: "-4%",
-      left: "40%",
+      width: "13%",
+      margin: "0 auto",
+      padding: "1rem 0 2rem",
+      background: "#EDF6FF",
     },
     emptyJobs: {
       backgroundColor: "#dedede",
@@ -61,23 +62,24 @@ const Jobs = () => {
       backgroundColor: "#dedede",
       display: "flex",
       flexWrap: "wrap",
-      margin: "0 auto",
+      margin: "auto 12px",
       justifyContent: "left",
       borderRadius: 5,
       overflowY: "scroll",
       overflowX: "hidden",
-      height: 450,
+      maxHeight: 450,
       "-webkit-overflow-scrolling": "touch",
     },
     allCandidates: {
       background: "#fff",
       display: "flex",
-      margin: "8px auto",
+      margin: "8px 10px",
       width: "40%",
       flexDirection: "column",
       justifyContent: "left",
       padding: 2,
       borderRadius: 2,
+      height: "27.5%",
       border: "1px solid #303F6080",
     },
     candidateContainer: {
@@ -223,8 +225,8 @@ const Jobs = () => {
                 </Link>
               </div>
             )}
-            <Pagination sx={style.pagination} count={pageCount} page={currentPage} onChange={getJobs} />
           </div>
+          <Pagination sx={style.pagination} count={pageCount} page={currentPage} onChange={getJobs} />
         </div>
       </div>
       <div className="modalContainer">

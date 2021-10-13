@@ -3,8 +3,10 @@
         width: 100%;
         background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
         height: 12rem;
+        position: relative;
+        z-index: 0;
         .jobsHeading {
-            width: 75%;
+            width: 80%;
             margin: 0 auto;
             h3 {
                 font-size: 22px;
@@ -18,16 +20,15 @@
     }
     .jobContainer {
         background: #EDF6FF;
-        height: 210vh;
-        position: relative;
+        height: auto;
         .allJobContainer {
             width: 80%;
             display: flex;
-            position: absolute;
-            top: -4%;
-            left: 12%;
+            margin: -50px auto 0;
             flex-wrap: wrap;
             word-wrap: break-word;
+            position: relative;
+            z-index: 1;
             .allJobs {
                 background: #fff;
                 display: flex;
@@ -137,11 +138,8 @@
             }
         }
         .jobContainer {
-            height: 190vh;
             .allJobContainer {
-                top: 22%;
                 width: 85%;
-                left: 10.5%;
                 .allJobs {
                     width: 40%;
                 }
@@ -150,6 +148,9 @@
                 width: 75%;
             }
         }
+    }
+    .css-1tdi34i-MuiPagination-root {
+        width: 30% !important;
     }
 }
 @media(max-width: 767px)
@@ -161,9 +162,7 @@
             }
         }
         .jobContainer {
-            height: 640vh;
             .allJobContainer {
-                top: 36%;
                 left: 5%;
                 width: 100%;
                 flex-direction: column;
@@ -183,5 +182,8 @@
                 }
             }
         }
+    }
+    .css-1tdi34i-MuiPagination-root {
+        width: 50% !important;
     }
 }

@@ -212,10 +212,13 @@
         .dataContainer {
             .jobsContainer {
                 width: 90%;
+                h4 {
+                    margin-top: 4rem;
+                }
                 .jobs {
                     flex-direction: column;
                     .jobs-data {
-                        width: 100%;
+                        width: 90%;
                         margin-right: 0rem;
                         margin-bottom: 1.5rem;
                     }

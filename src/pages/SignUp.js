@@ -59,7 +59,7 @@ const SignUp = ({history}) => {
           <div className="userType">
             <button
               onClick={handleActive}
-              className={`icons${active ? "-active" : ""}`}
+              className={`icons${active ? " active" : ""}`}
               type='button'
             >
               <PersonSearchIcon />
@@ -67,7 +67,7 @@ const SignUp = ({history}) => {
             </button>
             <button
               onClick={handleActive}
-              className={`icons${!active ? "-active" : ""}`}
+              className={`icons${!active ? " active" : ""}`}
               type='button'
             >
               <PersonOutlineIcon />

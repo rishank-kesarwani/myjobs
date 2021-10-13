@@ -1,25 +1,26 @@
 .parentContainer {
     .formContainer {
         width: 100%;
-        height: 17rem;
+        height: 18rem;
         position: relative;
+        z-index: 0;
         background: transparent linear-gradient(248deg,#303f60 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
     }
     .uiContainer{
         background: #EDF6FF;
-        height: 100vh;
+        height: auto;
+        padding-bottom: 4rem;
         form {
             width: 40%;
-            margin: 0 auto;
+            margin: -17% auto 0;
             padding: 1.5rem 1.5rem 0;
             background: #fff;
             display: flex;
             flex-direction: column;
             box-shadow: 0px 30px 36px #557DA526;
             border-radius: 20px;
-            position: absolute;
-            left: 29%;
-            top: 25%;
+            position: relative;
+            z-index: 1;
             .icon_label {
                 margin-bottom: 1rem;
             }
@@ -28,7 +29,9 @@
                 margin-bottom: 1.5rem;
                 .icons {
                     margin-top: 0;
-                    display: inline-block;
+                    display: flex;
+                    padding-top: 10px;
+                    justify-content: center;
                     margin-right: 1rem;
                     color: #43afff;
                     border: 1px solid #303f60;
@@ -38,7 +41,7 @@
                         color: #303f60;
                         font-size: 15px;
                     }
-                    .active {
+                    .-active {
                         background: #43afff 0% 0% no-repeat padding-box;
                         border: 1px solid #43afff;
                         color: #fff;
@@ -79,7 +82,7 @@
                 font-size: 14px;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 400;
-                margin-bottom: 0.1rem;
+                margin-bottom: 0.5rem;
             }
             .validation
             {
@@ -158,11 +161,9 @@
 @media(min-width: 768px) and (max-width: 1024px)
 {
     .parentContainer {
-        height: 65vh;
         .uiContainer {
             form {
                 width: 60%;
-                left: 19%;
             }
         }
     }
@@ -170,11 +171,13 @@
 @media(max-width: 767px)
 {
     .parentContainer {
-        height: 50vh;
+        .formContainer {
+            height: 20rem;
+        }
         .uiContainer {
             form {
-                width: 90%;
-                left: 5%;
+                width: 75%;
+                margin-top: -70%;
                 .passWordContainer {
                     .create_password {
                         margin-right: 0.5rem;
